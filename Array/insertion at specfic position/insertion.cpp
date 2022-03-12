@@ -17,7 +17,7 @@ int main()
     cout << "Enter Position : ";
     cin >> pos;
 
-    // code for insert at specfic position
+    // code for insert at specific position
     if (pos <= 0 || pos >= size + 1)
     {
         cout << "Invalid Position";
