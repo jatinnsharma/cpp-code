@@ -20,7 +20,7 @@ int main()
     // code for insert at specific position
     if (pos <= 0 || pos >= size + 1)
     {
-        cout << "Invalid Position";
+        cout << "Invalid Position !!!";
     }
     else
     {
