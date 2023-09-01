@@ -35,7 +35,5 @@ int main()
     // For unsorted array put last data and put it where user want to delete data because it take less time 
     // For sorted array must have to use for loop algo
 
-    
-
     return 0;
 }
