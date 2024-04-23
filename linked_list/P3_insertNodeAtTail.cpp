@@ -8,8 +8,9 @@ SinglyLinkedListNode *insertNodeAtTail(SinglyLinkedListNode *head, int data)
     }
     else
     {
+        SinglyLinkedListNode *mover;
         mover = head;
-        while (mover!= nullptr)
+        while (mover->next!= nullptr)
         {
            mover = mover->next;
         }
@@ -17,3 +18,4 @@ SinglyLinkedListNode *insertNodeAtTail(SinglyLinkedListNode *head, int data)
     }
     return head;
 }
+
