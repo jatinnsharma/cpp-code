@@ -10,7 +10,7 @@ It sounds like you're envisioning a comprehensive platform that caters to users'
 
 3.Exam Section:
     Result Viewing: Users can view their exam results from various boards and government bodies in one place.
-    Exam Details: A dedicated section providing information on new government exams at the state and university levels, categorized by exam type and date.
+    Exam Details: A dedicated section providing information on new government exams at the state and university levels, categorized by exam type and date
 
 4.Community Engagement:
     Community Discovery: Users can search for and join communities based on their interests (e.g., dance, travel, technology).
