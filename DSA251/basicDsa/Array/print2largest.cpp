@@ -1,37 +1,20 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution{
-public:	
-	int print2largest(int arr[], int n) {
-	 int largest = -1;
-	 int secondlargest = -1;
-	 for(int i =0;i<n;i++){
-	     if(largest<arr[i]){
-	        secondlargest = largest;
-	        largest=arr[i];
-	     }else if(secondlargest<arr[i]  && largest>arr[i]){
-	         secondlargest = arr[i];
-	     }
-	 }
-	 
-	 return secondlargest;
-	}
-};
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        int arr[n];
-        for (int i = 0; i < n; i++) {
-            cin >> arr[i];
+#include <bits/stdc++.h> 
+int findSecondLargest(int n, vector<int> &arr)
+{
+    int largest = INT_MIN;
+    int secondLargest = INT_MIN;
+    for(int i =0;i<n;i++){
+        if(largest<arr[i]){
+            secondLargest=largest;
+            largest=arr[i];
+        }else if(largest>arr[i] && secondLargest<arr[i]){
+            secondLargest=arr[i];
         }
-        Solution ob;
-        auto ans = ob.print2largest(arr, n);
-        cout << ans << "\n";
     }
-    return 0;
+
+    if(secondLargest==INT_MIN){
+        return -1;
+    }
+
+    return secondLargest;
 }
